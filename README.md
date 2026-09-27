@@ -6,8 +6,7 @@
  **Status:** research prototype on synthetic data
 
 ## Goal
-About 10% of clinically reported cancer variants are **VUS**, which can't guide treatment or cascade testing. This project builds a reproducible, production-ready pipeline that learns from confidently labelled variants and reclassifies each VUS as **Pathogenic** or **Benign**, with a probability, a confidence tier and model agreement. The target was ≥ 88–92% accuracy on both Train and Test without overfitting.
-
+About 10% of clinically reported cancer variants are **VUS**, which can't guide treatment or cascade testing. This project builds a reproducible, production-ready pipeline that learns from confidently labelled variants and reclassifies each VUS as **Pathogenic** or **Benign**, with a probability, a confidence tier and model agreement. 
 ## Data
 | Item | Value |
 |---|---|
