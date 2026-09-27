@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vus-reclassification"
+version = "1.0.0"
+description = "Machine-learning reclassification of clinical Variants of Uncertain Significance (VUS) as Pathogenic or Benign"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "YO (rickyemi)" }]
+keywords = ["genomics", "variant classification", "VUS", "xgboost", "svm", "transformer", "machine learning"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning", "ignore::UserWarning"]

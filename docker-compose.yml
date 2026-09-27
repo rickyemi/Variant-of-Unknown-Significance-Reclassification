@@ -1,0 +1,26 @@
+services:
+  # Full pipeline: data -> analysis -> features -> train -> evaluate -> stress -> predict
+  pipeline:
+    build: .
+    image: vus-reclassification:latest
+    volumes:
+      - ./:/app
+    command: make all
+
+  # Score the VUS (or any CSV) with the saved models
+  predict:
+    image: vus-reclassification:latest
+    volumes:
+      - ./:/app
+    command: python -m src.models.predict_model
+
+  # Jupyter for the notebooks: http://localhost:8888
+  notebook:
+    image: vus-reclassification:latest
+    volumes:
+      - ./:/app
+    ports:
+      - "8888:8888"
+    command: >
+      sh -c "pip install --user jupyterlab &&
+             python -m jupyterlab --ip=0.0.0.0 --port=8888 --no-browser --notebook-dir=/app/notebooks"

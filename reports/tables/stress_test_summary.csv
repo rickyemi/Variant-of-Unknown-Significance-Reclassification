@@ -1,0 +1,28 @@
+Model,Test,Value,Rule,Result
+XGBoost,1 Bootstrap AUC CI lower bound,0.924,>= 0.90,PASS
+XGBoost,2 AUC drop at +30% missing,0.015,<= 0.05,PASS
+XGBoost,3 AUC drop at 0.25 SD noise,0.007,<= 0.05,PASS
+XGBoost,5 No subgroup significantly below overall AUC,15/15,every subgroup 95% CI upper bound >= overall AUC,PASS
+XGBoost,6 AUC drop at 10% label noise,0.004,<= 0.03,PASS
+XGBoost,7 Permutation test: real vs null AUC,0.947 vs 0.495,null ~0.5; real >= max null + 0.30,PASS
+XGBoost,8 Final Train-Test AUC gap,0.006,|gap| <= 0.05,PASS
+XGBoost,9 CV fold AUC SD,0.019,<= 0.02,PASS
+XGBoost,11 Input edge cases,6/6 passed,all pass,PASS
+SVM-RBF,1 Bootstrap AUC CI lower bound,0.928,>= 0.90,PASS
+SVM-RBF,2 AUC drop at +30% missing,0.014,<= 0.05,PASS
+SVM-RBF,3 AUC drop at 0.25 SD noise,0.006,<= 0.05,PASS
+SVM-RBF,5 No subgroup significantly below overall AUC,15/15,every subgroup 95% CI upper bound >= overall AUC,PASS
+SVM-RBF,6 AUC drop at 10% label noise,-0.001,<= 0.03,PASS
+SVM-RBF,7 Permutation test: real vs null AUC,0.950 vs 0.502,null ~0.5; real >= max null + 0.30,PASS
+SVM-RBF,8 Final Train-Test AUC gap,-0.015,|gap| <= 0.05,PASS
+SVM-RBF,9 CV fold AUC SD,0.015,<= 0.02,PASS
+SVM-RBF,11 Input edge cases,6/6 passed,all pass,PASS
+Transformer,1 Bootstrap AUC CI lower bound,0.932,>= 0.90,PASS
+Transformer,2 AUC drop at +30% missing,0.018,<= 0.05,PASS
+Transformer,3 AUC drop at 0.25 SD noise,0.005,<= 0.05,PASS
+Transformer,5 No subgroup significantly below overall AUC,15/15,every subgroup 95% CI upper bound >= overall AUC,PASS
+Transformer,6 AUC drop at 10% label noise,0.002,<= 0.03,PASS
+Transformer,7 Permutation test: real vs null AUC,0.952 vs 0.495,null ~0.5; real >= max null + 0.30,PASS
+Transformer,8 Final Train-Test AUC gap,-0.023,|gap| <= 0.05,PASS
+Transformer,9 CV fold AUC SD,0.017,<= 0.02,PASS
+Transformer,11 Input edge cases,6/6 passed,all pass,PASS

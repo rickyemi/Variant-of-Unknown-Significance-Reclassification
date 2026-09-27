@@ -1,0 +1,19 @@
+Model,case,passed,detail
+XGBoost,all_missing_row,True,P range 0.055-0.055
+XGBoost,extreme_values_x50,True,P range 0.007-0.935
+XGBoost,extreme_negative_values,True,P range 0.005-0.035
+XGBoost,unseen_categories,True,P range 0.006-0.847
+XGBoost,single_row,True,P range 0.018-0.018
+XGBoost,deterministic_repeat_call,True,max diff 0.00e+00
+SVM-RBF,all_missing_row,True,P range 0.036-0.036
+SVM-RBF,extreme_values_x50,True,P range 0.002-1.000
+SVM-RBF,extreme_negative_values,True,P range 0.000-0.014
+SVM-RBF,unseen_categories,True,P range 0.005-0.869
+SVM-RBF,single_row,True,P range 0.042-0.042
+SVM-RBF,deterministic_repeat_call,True,max diff 0.00e+00
+Transformer,all_missing_row,True,P range 0.022-0.022
+Transformer,extreme_values_x50,True,P range 0.022-0.805
+Transformer,extreme_negative_values,True,P range 0.022-0.023
+Transformer,unseen_categories,True,P range 0.021-0.806
+Transformer,single_row,True,P range 0.023-0.023
+Transformer,deterministic_repeat_call,True,max diff 0.00e+00

@@ -1,0 +1,29 @@
+feature,q_value,univariate_auc,mutual_info,group,type,pass_fdr,pass_mi,selected,reason
+Variant_Type,2.3707103918803227e-116,,0.10309563196800667,Genomic,categorical,True,True,True,kept
+REVEL_Score,7.139961394657759e-93,0.8065264942662629,0.095737145104281,Genomic,numeric,True,True,True,kept
+PolyPhen2_Score,2.5277277436443697e-86,0.7916355260110541,0.08199787094964028,Genomic,numeric,True,True,True,kept
+gnomAD_AF,2.4199384288716893e-75,0.7802158410605784,0.0740164157929053,Genomic,numeric,True,True,True,kept
+In_Functional_Domain,1.0824109076727655e-91,,0.07094940114949977,Genomic,categorical,True,True,True,kept
+Family_History_Cancer,1.5744342299868731e-77,,0.05569904712983967,Demography,categorical,True,True,True,kept
+GERP_RS,1.2648464346872948e-49,0.7216002778138647,0.049890259941876236,Genomic,numeric,True,True,True,kept
+CADD_Phred,4.1281020965592426e-54,0.7376252868378083,0.047294988532847526,Genomic,numeric,True,True,True,kept
+SIFT_Score,1.081404338276636e-47,0.7210057651234122,0.04522918188832725,Genomic,numeric,True,True,True,kept
+SpliceAI_Score,3.364856828037819e-36,0.6871953274475305,0.04402458655784369,Genomic,numeric,True,True,True,kept
+HRD_Score,9.813480239893154e-49,0.7211973081959986,0.03815336420409676,Biomarker,numeric,True,True,True,kept
+PhyloP_100way,1.2702745311246916e-43,0.7088855253478761,0.032762147828530264,Genomic,numeric,True,True,True,kept
+Tumor_Mutational_Burden,3.822711408030278e-18,0.6296333704299908,0.023262701314203493,Biomarker,numeric,True,True,True,kept
+Ki67_Index,8.739005620463128e-11,0.5970953077753504,0.020473747712538515,Biomarker,numeric,True,True,True,kept
+Variant_Allele_Freq,1.4546070763561242e-12,0.6085424208542811,0.018806073367700904,Biomarker,numeric,True,True,True,kept
+Age,2.9490641223577357e-11,0.6015851259743866,0.008431053841012837,Demography,numeric,True,True,True,kept
+Exon_Number,0.5249070218169559,0.5118762459526791,0.00669357021301531,Genomic,numeric,False,True,False,dropped: FDR q >= 0.05
+CA125_U_mL,0.00022698289333621864,0.557931171672966,0.0025689445355983054,Biomarker,numeric,True,False,False,dropped: low mutual information
+Gene,0.9003495594290752,,0.0018739807336331793,Genomic,categorical,False,False,False,dropped: FDR q >= 0.05
+Smoking_Status,0.11366468210160847,,0.0010122691595809558,Demography,categorical,False,False,False,dropped: FDR q >= 0.05
+PD_L1_TPS,0.5562591035059387,0.5106233939326625,0.0009391760570225394,Biomarker,numeric,False,False,False,dropped: FDR q >= 0.05
+Ethnicity,0.6959803104704909,,0.0005387691793763486,Demography,categorical,False,False,False,dropped: FDR q >= 0.05
+Cancer_Type,0.7558318596729184,,0.0004858479079560135,Demography,categorical,False,False,False,dropped: FDR q >= 0.05
+Alcohol_Use,0.4885377355455586,,0.00035239230522315923,Demography,categorical,False,False,False,dropped: FDR q >= 0.05
+Sex,0.4813874947921663,,0.00018825622415949428,Demography,categorical,False,False,False,dropped: FDR q >= 0.05
+BMI,0.8204910829050925,0.5039600808867586,0.0,Demography,numeric,False,False,False,dropped: FDR q >= 0.05
+CEA_ng_mL,6.573021225169655e-08,0.5831113347348824,0.0,Biomarker,numeric,True,False,False,dropped: low mutual information
+Read_Depth,0.19023289519296854,0.5226444320548694,0.0,Biomarker,numeric,False,False,False,dropped: FDR q >= 0.05

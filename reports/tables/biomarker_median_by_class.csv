@@ -1,0 +1,11 @@
+,median_Benign,median_Pathogenic,median_VUS
+Variant_Allele_Freq,0.341,0.55,0.438
+Read_Depth,319.0,309.0,312.0
+Tumor_Mutational_Burden,6.72,13.51,8.26
+Ki67_Index,17.3,36.25,23.3
+PD_L1_TPS,22.2,21.3,21.4
+CEA_ng_mL,2.455,4.14,3.07
+CA125_U_mL,19.35,33.95,22.6
+HRD_Score,17.25,48.0,25.7
+Age,56.0,51.0,53.5
+BMI,27.5,27.4,27.7

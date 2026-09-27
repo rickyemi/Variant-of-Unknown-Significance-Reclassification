@@ -1,0 +1,98 @@
+{
+  "features": [
+    "REVEL_Score",
+    "PolyPhen2_Score",
+    "gnomAD_AF",
+    "CADD_Phred",
+    "GERP_RS",
+    "HRD_Score",
+    "SIFT_Score",
+    "PhyloP_100way",
+    "SpliceAI_Score",
+    "Tumor_Mutational_Burden",
+    "Variant_Allele_Freq",
+    "Age",
+    "Ki67_Index",
+    "Variant_Type",
+    "In_Functional_Domain",
+    "Family_History_Cancer"
+  ],
+  "numeric": [
+    "REVEL_Score",
+    "PolyPhen2_Score",
+    "gnomAD_AF",
+    "CADD_Phred",
+    "GERP_RS",
+    "HRD_Score",
+    "SIFT_Score",
+    "PhyloP_100way",
+    "SpliceAI_Score",
+    "Tumor_Mutational_Burden",
+    "Variant_Allele_Freq",
+    "Age",
+    "Ki67_Index"
+  ],
+  "categorical": [
+    "Variant_Type",
+    "In_Functional_Domain",
+    "Family_History_Cancer"
+  ],
+  "positive_class": "Pathogenic",
+  "models": {
+    "XGBoost": {
+      "file": "xgboost_model.joblib",
+      "best_params": {
+        "colsample_bytree": 0.5477050582452057,
+        "gamma": 1.8540912609913318,
+        "learning_rate": 0.07416218762063824,
+        "max_depth": 2,
+        "min_child_weight": 3,
+        "n_estimators": 271,
+        "reg_alpha": 0.22819491501562741,
+        "reg_lambda": 8.48625105707848,
+        "subsample": 0.7888859700647797
+      },
+      "oof_cv_auc": 0.9285656721486999,
+      "decision_threshold": 0.22015032172203064,
+      "train_seconds": 16.6
+    },
+    "SVM-RBF": {
+      "file": "svm_rbf_model.joblib",
+      "best_params": {
+        "C": 13.145103232150124,
+        "class_weight": null,
+        "gamma": 0.00042079886696066364,
+        "probability": true
+      },
+      "oof_cv_auc": 0.9329074539917913,
+      "decision_threshold": 0.21249829831082956,
+      "train_seconds": 15.1
+    },
+    "Transformer": {
+      "file": "transformer_model.joblib",
+      "best_params": {
+        "d_token": 32,
+        "n_heads": 4,
+        "n_layers": 2,
+        "ff_mult": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "batch_size": 128,
+        "max_epochs": 200,
+        "patience": 20,
+        "random_state": 42
+      },
+      "oof_cv_auc": 0.9234913855133866,
+      "decision_threshold": 0.10571479797363281,
+      "train_seconds": 73.8,
+      "best_epoch": 11
+    }
+  },
+  "environment": {
+    "python": "3.11.15",
+    "sklearn": "1.8.0",
+    "xgboost": "3.2.0",
+    "torch": "2.14.0+cu130"
+  }
+}

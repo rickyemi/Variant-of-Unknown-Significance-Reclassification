@@ -1,0 +1,13 @@
+Model,features_removed,n_removed,AUC
+XGBoost,none,0,0.9469142259414225
+SVM-RBF,none,0,0.9498830913118386
+Transformer,none,0,0.9521597341865617
+XGBoost,Variant_Type,1,0.940591927147428
+SVM-RBF,Variant_Type,1,0.9470372877184347
+Transformer,Variant_Type,1,0.9457605217819346
+XGBoost,"Variant_Type, PolyPhen2_Score",2,0.9340542702436624
+SVM-RBF,"Variant_Type, PolyPhen2_Score",2,0.9425455328574944
+Transformer,"Variant_Type, PolyPhen2_Score",2,0.9419763721388137
+XGBoost,"Variant_Type, PolyPhen2_Score, REVEL_Score",3,0.9255322421855773
+SVM-RBF,"Variant_Type, PolyPhen2_Score, REVEL_Score",3,0.9383845065222742
+Transformer,"Variant_Type, PolyPhen2_Score, REVEL_Score",3,0.9390690376569037
